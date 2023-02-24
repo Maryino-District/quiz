@@ -32,11 +32,17 @@
                                 <rect key="frame" x="131.66666666666666" y="290" width="129.99999999999997" height="34.333333333333314"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Next question"/>
+                                <connections>
+                                    <action selector="showNextQuestion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aYZ-fs-Gzj"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zb9-76-V7e">
                                 <rect key="frame" x="134" y="488.33333333333331" width="125" height="34.333333333333314"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Show answer"/>
+                                <connections>
+                                    <action selector="showAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dfS-11-8ER"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -46,23 +52,19 @@
                             <constraint firstItem="DBM-2f-qHz" firstAttribute="top" secondItem="Jf2-fJ-PYg" secondAttribute="bottom" constant="119" id="8hY-yk-dKP"/>
                             <constraint firstItem="DBM-2f-qHz" firstAttribute="centerX" secondItem="4Mk-RM-p3i" secondAttribute="centerX" id="AN1-c1-kBA"/>
                             <constraint firstItem="zb9-76-V7e" firstAttribute="top" secondItem="DBM-2f-qHz" secondAttribute="bottom" constant="24" id="AVe-l5-UZ6"/>
-                            <constraint firstItem="4Mk-RM-p3i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CuJ-ea-pcW"/>
                             <constraint firstItem="zb9-76-V7e" firstAttribute="centerX" secondItem="4Mk-RM-p3i" secondAttribute="centerX" id="DbJ-25-SWE"/>
-                            <constraint firstItem="zb9-76-V7e" firstAttribute="centerX" secondItem="4Mk-RM-p3i" secondAttribute="centerX" constant="233" id="Gak-5U-Dpz"/>
                             <constraint firstItem="Jf2-fJ-PYg" firstAttribute="centerX" secondItem="4Mk-RM-p3i" secondAttribute="centerX" id="Hnv-kb-hqK"/>
-                            <constraint firstItem="Jf2-fJ-PYg" firstAttribute="centerX" secondItem="4Mk-RM-p3i" secondAttribute="centerX" constant="233" id="KdD-ZA-bFj"/>
                             <constraint firstItem="Jf2-fJ-PYg" firstAttribute="centerX" secondItem="4Mk-RM-p3i" secondAttribute="centerX" id="ON5-nD-dcv"/>
                             <constraint firstItem="4Mk-RM-p3i" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="R8j-Cv-1zA"/>
                             <constraint firstItem="zb9-76-V7e" firstAttribute="centerX" secondItem="4Mk-RM-p3i" secondAttribute="centerX" id="Wfc-DS-e9J"/>
                             <constraint firstItem="Jf2-fJ-PYg" firstAttribute="top" secondItem="4Mk-RM-p3i" secondAttribute="bottom" constant="60" id="ZNM-KG-Qj2"/>
-                            <constraint firstItem="DBM-2f-qHz" firstAttribute="centerX" secondItem="4Mk-RM-p3i" secondAttribute="centerX" constant="233" id="ZiI-rm-dAR"/>
                             <constraint firstItem="DBM-2f-qHz" firstAttribute="centerX" secondItem="4Mk-RM-p3i" secondAttribute="centerX" id="h7W-d8-dUp"/>
                             <constraint firstItem="Jf2-fJ-PYg" firstAttribute="top" secondItem="4Mk-RM-p3i" secondAttribute="bottom" constant="60" id="rqQ-Gd-Wva"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="answerLabel" destination="DBM-2f-qHz" id="h1d-Zv-YXP"/>
-                        <outlet property="questionLabel" destination="4Mk-RM-p3i" id="zos-9r-kvs"/>
+                        <outlet property="questionLabel" destination="4Mk-RM-p3i" id="Sm1-ZH-uQL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
